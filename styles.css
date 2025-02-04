@@ -1,3 +1,4 @@
+/* Allgemeine Stile */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -14,29 +15,62 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px; /* Optimiert für Smartphones */
 }
 
-#countdown {
-    font-size: 2em;
-    margin-top: 20px;
+/* Werbebanner */
+.banner {
+    background-color: #ffcc00;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-input[type="datetime-local"] {
+.banner p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Event-Titel */
+#eventTitle {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Eingabefelder */
+input[type="text"], input[type="datetime-local"] {
+    width: 100%;
+    padding: 10px;
     margin: 10px 0;
-    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1em;
 }
 
+/* Button */
 button {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
     font-size: 1em;
     cursor: pointer;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* Countdown-Anzeige */
+#countdown {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#countdown span {
+    font-weight: bold;
 }
