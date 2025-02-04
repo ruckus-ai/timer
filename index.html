@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
+    <title>Event Countdown</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Countdown Timer</h1>
-        <label for="dateInput">Geben Sie das Zieldatum ein:</label>
+        <!-- Werbebanner -->
+        <div class="banner">
+            <p>Werbebanner Platzhalter</p>
+        </div>
+
+        <!-- Event-Eingabe -->
+        <h1 id="eventTitle">Event Countdown</h1>
+        <label for="eventName">Event-Name:</label>
+        <input type="text" id="eventName" placeholder="Geben Sie den Event-Namen ein">
+        <label for="dateInput">Zieldatum:</label>
         <input type="datetime-local" id="dateInput">
         <button onclick="startCountdown()">Timer starten</button>
+
+        <!-- Countdown-Anzeige -->
         <div id="countdown">
             <span id="days"></span> Tage
             <span id="hours"></span> Stunden
